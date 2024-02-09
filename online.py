@@ -10,7 +10,7 @@ import websocket
 import requests
 
 status = "online"
-token = config.token
+token = os.environ['TOKEN']
 
 headers = {"Authorization": token, "Content-Type": "application/json"}
 userinfo = requests.get('https://discordapp.com/api/v9/users/@me', headers=headers).json()
