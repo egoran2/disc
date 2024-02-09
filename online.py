@@ -8,6 +8,7 @@ import json
 import time
 import websocket
 import requests
+import os
 
 status = "online"
 token = os.environ['TOKEN']
